@@ -11,3 +11,5 @@ RUN apt-get update && apt-get install -y gcc make cmake tar g++ libxml2-dev wget
 RUN apt-get install -y python2
 
 RUN apt-get install -y openssh-client
+
+RUN mkdir ~/.ssh
