@@ -13,6 +13,8 @@ RUN apt-get install -y pkg-config libgmp3-dev
 
 RUN apt-get install -y openssh-client
 
-RUN sudo apt-get remove --purge python3.8
+RUN sudo apt-get purge --auto-remove python3.8
+
+
 
 RUN mkdir ~/.ssh
